@@ -26,12 +26,12 @@ function App() {
         </Card.Body>
       </Card>
       {/* message */}
-      {firstName !== "" ?
+      {firstName ?
         <>
           <p>{`Hello ${firstName}!`}</p>
           <img style={{ width: '300px' }} src="https://res.cloudinary.com/dgs5ufh6i/image/upload/v1705589723/1000_F_300536833_5umNuZK9uPZzEOOzHAEO4imVZu5AD3T9_fmmkwf.jpg" alt="feedback" />
         </>
-        : null
+        :  <p>{`Hello There!`}</p>
       }
     </div>
   );
